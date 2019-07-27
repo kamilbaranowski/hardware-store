@@ -32,5 +32,9 @@ public class CustomerController {
     public void addCustomer(@RequestBody Customer customer){
         this.customerService.saveCustomer(customer);
     }
+    @DeleteMapping("/{customerId}")
+    public void removeCustomer(@PathVariable("customerId") int customerId){
+        this.customerService.deleteCustomer(customerId);
+    }
 
 }

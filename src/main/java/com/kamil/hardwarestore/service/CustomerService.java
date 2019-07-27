@@ -29,4 +29,8 @@ public class CustomerService {
     public void saveCustomer(Customer customer){
         customerRepository.save(customer);
     }
+
+    public void deleteCustomer(int customerId){
+        customerRepository.deleteById(customerId);
+    }
 }
