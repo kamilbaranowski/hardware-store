@@ -20,8 +20,8 @@ public class Customer {
     @Column(name = "gender")
     private String gender;
 
-    @ManyToOne
-    @JoinColumn(name = "address_id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "address_id")
     private Address address;
 
     public Customer() {
