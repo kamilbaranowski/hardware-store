@@ -1,4 +1,4 @@
-package com.kamil.hardwarestore.model;
+package com.kamil.hardwarestore.model.entity;
 
 import javax.persistence.*;
 

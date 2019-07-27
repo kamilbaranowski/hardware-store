@@ -1,13 +1,11 @@
 package com.kamil.hardwarestore.controller;
 
 
-import com.kamil.hardwarestore.model.Customer;
+import com.kamil.hardwarestore.model.entity.Customer;
 import com.kamil.hardwarestore.model.CustomerWrapper;
 import com.kamil.hardwarestore.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/customers")

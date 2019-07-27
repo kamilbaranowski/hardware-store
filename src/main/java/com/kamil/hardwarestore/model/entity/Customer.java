@@ -1,5 +1,7 @@
-package com.kamil.hardwarestore.model;
+package com.kamil.hardwarestore.model.entity;
 
+
+import com.kamil.hardwarestore.model.entity.Address;
 
 import javax.persistence.*;
 

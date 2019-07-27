@@ -1,7 +1,7 @@
 package com.kamil.hardwarestore.service;
 
 import com.kamil.hardwarestore.dao.CustomerRepository;
-import com.kamil.hardwarestore.model.Customer;
+import com.kamil.hardwarestore.model.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

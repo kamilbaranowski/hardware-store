@@ -2,6 +2,8 @@ package com.kamil.hardwarestore.model;
 
 
 
+import com.kamil.hardwarestore.model.entity.Customer;
+
 import java.util.List;
 
 
