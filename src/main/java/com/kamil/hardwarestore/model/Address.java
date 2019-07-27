@@ -2,7 +2,7 @@ package com.kamil.hardwarestore.model;
 
 
 import javax.persistence.*;
-import java.util.Set;
+
 
 @Entity
 public class Address {
@@ -27,8 +27,6 @@ public class Address {
     @Column(name = "apartment_number")
     private int apartmentNumber;
 
-    @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
-    private Set<Customer> books;
 
     public Address(){}
 
@@ -57,7 +55,5 @@ public class Address {
         return apartmentNumber;
     }
 
-    public Set<Customer> getBooks() {
-        return books;
-    }
+
 }
