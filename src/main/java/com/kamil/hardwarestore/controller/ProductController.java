@@ -5,6 +5,8 @@ import com.kamil.hardwarestore.model.ProductWrapper;
 import com.kamil.hardwarestore.model.entity.Product;
 import com.kamil.hardwarestore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,7 +26,8 @@ public class ProductController {
     }
 
     @PostMapping
-    public void addProduct(@RequestBody Product product){
+    public ResponseEntity addProduct(@RequestBody Product product){
         this.productService.saveProduct(product);
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 }
