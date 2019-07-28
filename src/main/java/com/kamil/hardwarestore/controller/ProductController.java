@@ -25,6 +25,11 @@ public class ProductController {
         return new ProductWrapper(productService.getAllProducts());
     }
 
+    @GetMapping("/{productId}")
+    public Product getProductById(@PathVariable("productId") int productId){
+        return productService.getProductById(productId);
+    }
+
     @PostMapping
     public ResponseEntity addProduct(@RequestBody Product product){
         this.productService.saveProduct(product);
