@@ -35,4 +35,9 @@ public class ProductController {
         this.productService.saveProduct(product);
         return new ResponseEntity(HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/{productId}")
+    public void deleteProduct(@PathVariable("productId") int productId){
+        this.productService.removeProduct(productId);
+    }
 }

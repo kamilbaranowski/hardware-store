@@ -34,4 +34,8 @@ public class ProductService {
         Optional<Product> product = this.productRepository.findById(productId);
         return product.orElseThrow(() -> new EmptyResultDataAccessException("No product found with id: " + productId, 1));
     }
+
+    public void removeProduct(int productId) {
+        productRepository.deleteById(productId);
+    }
 }
